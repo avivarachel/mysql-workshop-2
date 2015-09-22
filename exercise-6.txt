@@ -1,0 +1,13 @@
+mysql> DROP TABLE Account;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> SELECT * FROM Account;
+ERROR 1146 (42S02): Table 'decodemtl_addressbook.Account' doesn't exist
+mysql> SHOW TABLES;
++---------------------------------+
+| Tables_in_decodemtl_addressbook |
++---------------------------------+
+| AddressBook                     |
+| Entry                           |
++---------------------------------+
+2 rows in set (0.00 sec)

@@ -6,12 +6,13 @@ ERROR 1046 (3D000): No database selected
 +----------+
 1 row in set (0.00 sec)
 
-mysql> SELECT COUNT(*) FROM Entry WHERE type = "home" OR "work";                                                                                  
+mysql> SELECT COUNT(*) FROM Entry WHERE type="home" || type="work";
 +----------+
 | COUNT(*) |
 +----------+
-|     1600 |
-+----------+1 row in set, 1 warning (0.00 sec)
+|     2800 |
++----------+
+1 row in set (0.00 sec)
 
 mysql> SELECT COUNT(*) FROM Entry WHERE subtype = "phone";                                                                                       
 +----------+

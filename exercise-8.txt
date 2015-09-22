@@ -1,4 +1,4 @@
-mysql> SELECT * FROM Account WHERE id="63";
+mysql> SELECT * FROM Account WHERE id=63;
 +----+-------------------------------------------------+-------------+---------------------+---------------------+
 | id | email                                           | password    | createdOn           | modifiedOn          |
 +----+-------------------------------------------------+-------------+---------------------+---------------------+
@@ -8,7 +8,7 @@ mysql> SELECT * FROM Account WHERE id="63";
 
 // to show e-mail only:
 
-mysql> SELECT email FROM Account WHERE id="63";                                                                                                   
+mysql> SELECT email FROM Account WHERE id=63;                                                                                                   
 +-------------------------------------------------+
 | email                                           |
 +-------------------------------------------------+
@@ -16,7 +16,7 @@ mysql> SELECT email FROM Account WHERE id="63";
 +-------------------------------------------------+
 1 row in set (0.00 sec)
 
-mysql> SELECT * FROM AddressBook WHERE accountId="3";
+mysql> SELECT * FROM AddressBook WHERE accountId=3;
 +-----+-----------+---------------------------------+---------------------+---------------------+
 | id  | accountId | name                            | createdOn           | modifiedOn          |
 +-----+-----------+---------------------------------+---------------------+---------------------+
@@ -32,7 +32,7 @@ mysql> SELECT * FROM AddressBook WHERE accountId="3";
 
 // to show names ONLY:
 
-mysql> SELECT name FROM AddressBook WHERE accountId="3";
+mysql> SELECT name FROM AddressBook WHERE accountId=3;
 +---------------------------------+
 | name                            |
 +---------------------------------+

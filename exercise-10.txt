@@ -6,11 +6,11 @@ mysql> SELECT COUNT(*) FROM Entry WHERE birthday < '1982-02-12';
 +----------+
 1 row in set (0.01 sec)
 
-mysql> SELECT COUNT(*) FROM Entry WHERE birthday <= '1965-01-01';
+mysql> SELECT COUNT(*) FROM Entry WHERE birthday >= '1965-01-01';
 +----------+
 | COUNT(*) |
 +----------+
-|     1403 |
+|     2597 |
 +----------+
 1 row in set (0.01 sec)
 

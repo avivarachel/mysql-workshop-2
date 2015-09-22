@@ -1,0 +1,65 @@
+mysql> SOURCE data/import-table-structure.sql;
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Database changed
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> USE decodemtl_addressbook_import;
+Database changed
+
+mysql> SOURCE data/import-account.sql;
+Query OK, 10 rows affected (0.01 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+// Query OK, 10 rows affected (0.00 sec)
+Records: 10  Duplicates: 0  Warnings: 0 A MILLION TIMES!!!!!!!
+
+mysql> SOURCE data/import-addressbook.sql;
+Query OK, 10 rows affected (0.01 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+// Query OK, 10 rows affected (0.00 sec)
+Records: 10  Duplicates: 0  Warnings: 0 A MILLION TIMES!!!!!!!
+
+mysql> SOURCE data/import-entry.sql;
+Query OK, 10 rows affected (0.02 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+// Query OK, 10 rows affected (0.00 sec)
+Records: 10  Duplicates: 0  Warnings: 0 A MILLION TIMES!!!!!!!
+
+mysql> SELECT COUNT(*) FROM Account;
++----------+
+| COUNT(*) |
++----------+
+|     1000 |
++----------+
+1 row in set (0.00 sec)
+
+mysql> SELECT COUNT(*) FROM AddressBook;
++----------+
+| COUNT(*) |
++----------+
+|     1100 |
++----------+
+1 row in set (0.00 sec)
+
+mysql> SELECT COUNT(*) FROM Entry;
++----------+
+| COUNT(*) |
++----------+
+|     4000 |
++----------+
+1 row in set (0.00 sec)
